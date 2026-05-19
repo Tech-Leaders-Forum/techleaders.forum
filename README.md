@@ -8,8 +8,12 @@ Open the project through a local preview server or load `index.html` directly in
 
 - `index.html`: page structure and event copy
 - `styles.css`: visual design inspired by the provided flyer
-- `assets/tech-leaders-forum-logo.svg`: supplied logo
-- `assets/flyer-reference.png`: supplied flyer reference
+- `assets/tech-leaders-forum-logo.svg`: primary Tech Leaders' Forum logo
+- `assets/crafthub.svg`: logistics partner logo
+- `assets/kluster.svg`: venue logo for the next forum session
+- `assets/meetup-*.jpg`: meetup photography for the gallery carousel
+- `assets/panelist-*.jpg` / `assets/panelist-*.jpeg`: previous panelist photos
+- `assets/flyer-reference.png`: original flyer reference
 
 ## Design System
 
@@ -68,7 +72,7 @@ Type rules:
 
 ### Logo
 
-Use `assets/tech-leaders-forum-logo.svg` for the logo. It should remain white and visually prominent in the hero and header.
+Use `assets/tech-leaders-forum-logo.svg` for the Tech Leaders' Forum logo. It should remain white and visually prominent in the hero and header.
 
 Hero hierarchy:
 
@@ -78,6 +82,11 @@ Hero hierarchy:
 4. CTA buttons and summary panel
 
 The subtitle should never overpower the logo.
+
+Partner and venue logos:
+
+- `assets/crafthub.svg` appears in the hosts/logistics section and should be centered within its box while the "Logistics by" label stays top-left.
+- `assets/kluster.svg` appears beside the next session date and should read as metadata, not as a dominant brand element.
 
 ### Boxes And Cards
 
@@ -89,7 +98,16 @@ All standard boxes should use the same visual language:
 - optional shadow: `var(--shadow)` for larger framed components
 - hover lift: subtle upward movement, brighter lime border, slightly darker background
 
-This applies to host cards, value cards, rule cards, panelist placeholders, conference cards, carousel shell, and the hero summary panel. Timeline cards are currently excluded from generic reveal animation because the timeline is planned for rework.
+This applies to the hero summary panel, host cards, logistics card, value cards, rule cards, panelist cards, timeline cards, conference cards, carousel shell, and contact CTA area.
+
+Conference timeline cards use a slightly lighter translucent background than normal forum-session cards so conference collaborations are visually distinct without introducing a new component family.
+
+Badges:
+
+- `Forum Session`: normal TLF sessions
+- `Conference Collaboration`: TLF activity inside a partner conference
+
+Badges should stay compact, uppercase, lime-accented, and secondary to the event title.
 
 ### Buttons
 
@@ -119,7 +137,8 @@ Motion should be subtle and functional:
 - carousel pauses on hover/focus
 - card hover lift
 - button hover/press micro-interactions
-- section reveal on scroll, excluding the timeline for now
+- section reveal on scroll
+- timeline dots and cards may animate subtly, but the layout should remain robust on mobile
 
 Respect `prefers-reduced-motion: reduce`; animations and transitions should effectively stop for users who request reduced motion.
 
@@ -133,6 +152,38 @@ Use real meetup photos whenever showing the event experience. Images should comm
 - CraftHub/Kluster venue energy
 
 Avoid abstract stock imagery, generic tech illustrations, decorative blobs, or SVG hero art. The site should feel like a real community, not a generic event template.
+
+People photos:
+
+- Host photos use large circular crops, centered in their cells.
+- Previous panelist photos use the same circular treatment at a smaller scale.
+- Use `object-position` per image when needed so heads are not cropped.
+- If a panelist photo is unavailable, keep a quiet placeholder circle rather than changing the grid structure.
+
+Gallery:
+
+- The meetup gallery sits after the "What happens here" section.
+- It uses five local meetup photos in a single carousel.
+- Controls should be visible and keyboard-accessible.
+- Autoplay should pause on hover and focus.
+
+### Timeline
+
+The sessions area uses a centered vertical timeline on desktop and a left-rail timeline on mobile.
+
+Current content groups:
+
+- Upcoming: October 2026 Compass AI & Tech Summit collaboration, August 2026 forum session, June 2026 Craft Conference collaboration
+- Previous sessions: April 2026 Managing Remote Teams, February 2026 AI use for Engineering Managers
+
+Timeline rules:
+
+- Alternate event cards left and right on desktop.
+- Keep timeline dots aligned to the vertical rail.
+- Use short horizontal connectors from each card to its dot only when they remain pixel-aligned and responsive.
+- Stack to one side on mobile with the rail on the left.
+- Normal forum sessions use darker cards; conference collaborations use slightly lighter cards.
+- CTAs inside timeline cards should use the existing ghost button style.
 
 ### Layout Principles
 
