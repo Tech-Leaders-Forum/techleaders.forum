@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Leaders' Forum</title>
+    <meta
+      name="description"
+      content="An English-language, in-person forum in Budapest for engineering and tech leaders."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800;900&family=Space+Grotesk:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        document.documentElement.classList.add("motion-prep");
+      }
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Tech Leaders' Forum home">
+        <img src="./assets/tech-leaders-forum-logo.svg" alt="Tech Leaders' Forum" />
+      </a>
+      <nav class="nav-links" aria-label="Page sections">
+        <a href="#about">About</a>
+        <a href="#why">Why join</a>
+        <a href="#calendar">Sessions</a>
+        <a href="#questions">Questions</a>
+      </nav>
+      <a class="nav-cta" href="#calendar">See what's coming</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-noise" aria-hidden="true"></div>
+        <div class="hero-content">
+          <img
+            class="hero-logo"
+            src="./assets/tech-leaders-forum-logo.svg"
+            alt="Tech Leaders' Forum"
+          />
+          <h1 id="hero-title">Conversations on leadership challenges</h1>
+          <p class="hero-copy">
+            A curated, in-person forum for engineering and tech leaders. We start with a panel. We stay for the conversations.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#calendar">See what's coming up</a>
+            <a class="button ghost" href="#about">How it works</a>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="Forum summary">
+          <p>
+            An English-language meetup series in the heart of Budapest for people leading engineering and technology teams.
+          </p>
+          <div class="panel-grid">
+            <span>Moderated panel</span>
+            <span>Open room</span>
+            <span>Limited seats</span>
+            <span>No performance mode</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="intro" id="about" aria-labelledby="about-title">
+        <h2 id="about-title">Real situations, difficult decisions, and lessons learned the hard way.</h2>
+        <div class="copy-stack">
+          <p>
+            Tech Leaders' Forum sessions start with a moderated panel discussion and evolve into an open conversation with the room.
+          </p>
+          <p>
+            Attendance is intentionally limited to keep the atmosphere personal, thoughtful, and honest. The goal is not to create another conference experience, but a professional community where tech leaders can exchange perspectives without the usual performance mode.
+          </p>
+        </div>
+      </section>
+
+      <section class="hosts" aria-labelledby="hosts-title">
+        <div>
+          <p class="section-label">Hosts</p>
+          <h2 id="hosts-title">Hosted by practitioners who care about the real work of leadership.</h2>
+        </div>
+        <div class="host-grid">
+          <div class="host-card-row">
+            <article>
+            <img class="host-photo" src="./assets/emese-pogacsas.jpg" alt="Emese Pogácsás" />
+            <h3>Emese Pogácsás</h3>
+            <p>Leadership Coach & Advisor</p>
+            </article>
+            <article>
+            <img class="host-photo" src="./assets/peter-szasz.jpeg" alt="Péter Szász" />
+            <h3>Péter Szász</h3>
+            <p>Engineering Leadership Mentor</p>
+            </article>
+          </div>
+          <article class="logistics-card">
+            <span>Logistics by</span>
+            <img src="./assets/crafthub.svg" alt="CraftHub" />
+          </article>
+        </div>
+      </section>
+
+      <section class="next-session" id="next-session" aria-labelledby="next-title">
+        <div>
+          <p class="section-label">Next Forum Session</p>
+          <h2 id="next-title">Should Agent Smith conduct your performance reviews?</h2>
+          <div class="session-meta">
+            <span>August 2026 · Budapest</span>
+            <img src="./assets/kluster.svg" alt="Kluster" />
+          </div>
+          <p class="next-description">
+            As AI tools quietly enter more and more workplace conversations, feedback is becoming one of the next frontiers to rethink. Can AI help leaders prepare, structure, or deliver better feedback — or does outsourcing difficult conversations risk weakening trust, empathy, and human judgment? In this session, we’ll explore where AI can genuinely support feedback cultures, where it should stay far away, and why honest human conversations still matter more than ever. Expect real-world leadership dilemmas, uncomfortable questions, and practical insights from people navigating these tensions in their daily work. Because the real challenge may not be whether AI can give feedback — but whether leaders are slowly forgetting how to do it themselves.
+          </p>
+        </div>
+        <div class="next-actions">
+          <a class="button primary" href="https://luma.com/crafthub">Request to join</a>
+          <p>Request to join when a session is open, or subscribe for updates.</p>
+        </div>
+      </section>
+
+      <section class="why-section" id="why" aria-labelledby="why-title">
+        <div class="section-heading">
+          <p class="section-label">Why join</p>
+        </div>
+        <div class="cards" aria-label="Why join">
+          <article>
+            <span>01</span>
+            <h3>Beyond the polished version</h3>
+            <p>Panels are just the starting point; the most interesting conversations happen when audience members contribute their questions and experiences.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>You're not alone in this</h3>
+            <p>The messy decisions, the trade-offs, the doubts, the loneliness. They're more common than it feels like. Be a part of a community that shares the same challenges.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Conversations that stick</h3>
+            <p>No slides, no lectures. Just ideas, first-hand experiences, and questions that stay with you.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="format" id="format" aria-labelledby="format-title">
+        <div>
+          <p class="section-label">What happens here</p>
+          <h2 id="format-title">A small group from the local ecosystem. Different contexts, similar responsibilities.</h2>
+          <p>
+            Each session starts with a panel: people who have actually been in the situations we talk about. Then we open it up: questions can get more practical, answers less certain, and at some point the conversation might become more interesting than the panel itself.
+          </p>
+        </div>
+        <div class="rules-grid">
+          <article>
+            <h3>How it works</h3>
+            <ul>
+              <li>Panel discussion: real stories, not theory</li>
+              <li>Open conversation: challenge, question, expand</li>
+              <li>Informal networking afterwards: continue the discussion, make new connections</li>
+            </ul>
+          </article>
+          <article>
+            <h3>House rules</h3>
+            <ul>
+              <li>What's shared here stays here</li>
+              <li>Challenge ideas, not people</li>
+              <li>No pitching, no selling</li>
+              <li>Leave space for others</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="meetup-gallery" aria-labelledby="gallery-title">
+        <div class="gallery-heading">
+          <p class="section-label">In the room</p>
+          <h2 id="gallery-title">How the meetup looks in practice.</h2>
+        </div>
+        <div class="carousel" data-carousel>
+          <div class="carousel-track" tabindex="0" aria-label="Meetup photos">
+            <figure class="carousel-slide">
+              <img src="./assets/meetup-panel-cards.jpg" alt="Audience members and panelists holding colored cards during a Tech Leaders' Forum discussion." />
+            </figure>
+            <figure class="carousel-slide">
+              <img src="./assets/meetup-registration.jpg" alt="Guests talking near the Tech Leaders' Forum registration area." />
+            </figure>
+            <figure class="carousel-slide">
+              <img src="./assets/meetup-panel-room.jpg" alt="Panelists seated in front of the room during a Tech Leaders' Forum session." />
+            </figure>
+            <figure class="carousel-slide">
+              <img src="./assets/meetup-networking-wide.jpg" alt="Attendees networking after the meetup." />
+            </figure>
+            <figure class="carousel-slide">
+              <img src="./assets/meetup-networking-flag.jpg" alt="Attendees gathered around the venue during networking." />
+            </figure>
+          </div>
+          <div class="carousel-controls" aria-label="Gallery controls">
+            <button class="carousel-button" type="button" data-carousel-prev aria-label="Previous photo">&larr;</button>
+            <div class="carousel-dots" aria-label="Choose photo">
+              <button type="button" data-carousel-dot aria-label="Show photo 1" aria-current="true"></button>
+              <button type="button" data-carousel-dot aria-label="Show photo 2"></button>
+              <button type="button" data-carousel-dot aria-label="Show photo 3"></button>
+              <button type="button" data-carousel-dot aria-label="Show photo 4"></button>
+              <button type="button" data-carousel-dot aria-label="Show photo 5"></button>
+            </div>
+            <button class="carousel-button" type="button" data-carousel-next aria-label="Next photo">&rarr;</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="community" aria-labelledby="community-title">
+        <div class="community-heading">
+          <p class="section-label">More than a meetup series</p>
+          <h2 id="community-title">Helping build a real tech leadership community in Budapest.</h2>
+        </div>
+        <div class="copy-stack">
+          <p>
+            Throughout the year, we host focused TLF sessions in smaller interactive formats.
+          </p>
+          <p>
+            At larger conferences like Craft and Compass, we also create dedicated Tech Leaders programs and discussion spaces.
+          </p>
+          <p>
+            Different formats, same goal: helping engineering leaders learn from each other and build meaningful connections.
+          </p>
+        </div>
+      </section>
+
+      <section class="theory" aria-labelledby="theory-title">
+        <p class="section-label">Not just theory</p>
+        <h2 id="theory-title">Leaders from startups through scale-ups to enterprises, all dealing with similar kinds of problems.</h2>
+        <div class="panelist-grid" aria-label="Previous panelists">
+          <article>
+            <span class="panelist-photo">
+              <img src="./assets/panelist-akos-barta.jpeg" alt="Ákos Barta" />
+            </span>
+            <h3>Ákos Barta</h3>
+            <p>Sr. Director, AI Strategist</p>
+            <p>LastPass</p>
+          </article>
+          <article>
+            <span class="panelist-photo">
+              <img src="./assets/panelist-balazs-bozsogi.jpeg" alt="Balázs Bozsogi" />
+            </span>
+            <h3>Balázs Bozsogi</h3>
+            <p>Chief Delivery Officer</p>
+            <p>Aliz</p>
+          </article>
+          <article>
+            <span class="panelist-photo panelist-placeholder"></span>
+            <h3>Lucy Woodhead</h3>
+            <p>Engineering Manager</p>
+            <p>Treatwell</p>
+          </article>
+          <article>
+            <span class="panelist-photo">
+              <img src="./assets/panelist-mate-marjai.jpg" alt="Máté Marjai" />
+            </span>
+            <h3>Máté Marjai</h3>
+            <p>Engineering Manager</p>
+            <p>Primer</p>
+          </article>
+          <article>
+            <span class="panelist-photo">
+              <img src="./assets/panelist-tamas-michelberger.jpg" alt="Tamás Michelberger" />
+            </span>
+            <h3>Tamás Michelberger</h3>
+            <p>Tech Lead, Applied AI</p>
+            <p>WorldQuant</p>
+          </article>
+          <article>
+            <span class="panelist-photo">
+              <img src="./assets/panelist-tamas-tajti.jpeg" alt="Tamás Tajti" />
+            </span>
+            <h3>Tamás Tajti</h3>
+            <p>Development Manager</p>
+            <p>Slice</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="calendar" id="calendar" aria-labelledby="calendar-title">
+        <div class="calendar-heading">
+          <p class="section-label">Where you'll find us</p>
+          <h2 id="calendar-title">Tech Leaders' Forum sessions</h2>
+          <p>Smaller, focused community events for engineering and tech leaders.</p>
+        </div>
+        <h3 class="timeline-group-title">Upcoming</h3>
+        <div class="session-timeline" aria-label="Upcoming appearances and sessions">
+          <div class="session-item session-item-left">
+            <article class="conference-session">
+              <span class="session-badge">Conference Collaboration</span>
+              <strong>October 2026</strong>
+              <h3>Compass AI & Tech Summit · Tech Leaders Track</h3>
+              <p>Tech Leaders' Forum special session as part of the Leadership track.</p>
+              <a class="button ghost timeline-cta" href="https://compassaitechsummit.com/">Explore the conference</a>
+            </article>
+            <div class="timeline-node" aria-hidden="true">
+              <span></span>
+            </div>
+          </div>
+          <div class="session-item session-item-right">
+            <article class="forum-session">
+              <span class="session-badge">Forum Session</span>
+              <strong>August 2026</strong>
+              <h3>Should Agent Smith conduct your performance reviews?</h3>
+              <p>A discussion about feedback, AI, trust, and where human judgment still matters.</p>
+              <a class="button ghost timeline-cta" href="#next-session">View session details</a>
+            </article>
+            <div class="timeline-node" aria-hidden="true">
+              <span></span>
+            </div>
+          </div>
+          <div class="session-item session-item-left">
+            <article class="conference-session">
+              <span class="session-badge">Conference Collaboration</span>
+              <strong>June 2026</strong>
+              <h3>Craft Conference · Tech Leaders Lounge</h3>
+              <p>Facilitated discussions</p>
+              <ul>
+                <li>What Are We, Exactly? Redefining the Tech Manager Role</li>
+                <li>What Do I Do With My Developers? Product Ownership, Agentic Craft, and Shifting Expectations</li>
+              </ul>
+              <a class="button ghost timeline-cta" href="https://craft-conf.com/2026">Learn more about Craft</a>
+            </article>
+            <div class="timeline-node" aria-hidden="true">
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="timeline-group-title">Previous sessions</h3>
+        <div class="session-timeline previous-timeline" aria-label="Previous sessions">
+          <div class="session-item session-item-right">
+            <article class="forum-session">
+              <span class="session-badge">Forum Session</span>
+              <strong>April 2026</strong>
+              <h3>Managing Remote Teams</h3>
+            </article>
+            <div class="timeline-node" aria-hidden="true">
+              <span></span>
+            </div>
+          </div>
+          <div class="session-item session-item-left">
+            <article class="forum-session">
+              <span class="session-badge">Forum Session</span>
+              <strong>February 2026</strong>
+              <h3>AI use for Engineering Managers</h3>
+            </article>
+            <div class="timeline-node" aria-hidden="true">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="register" id="questions" aria-labelledby="questions-title">
+        <div>
+          <h2 class="section-label" id="questions-title">Questions?</h2>
+          <a class="button primary" href="mailto:hello@example.com">Reach out to the hosts</a>
+        </div>
+      </section>
+    </main>
+    <script>
+      document.documentElement.classList.add("motion-in");
+
+      const carousel = document.querySelector("[data-carousel]");
+
+      if (carousel) {
+        const track = carousel.querySelector(".carousel-track");
+        const slides = [...carousel.querySelectorAll(".carousel-slide")];
+        const dots = [...carousel.querySelectorAll("[data-carousel-dot]")];
+        const previous = carousel.querySelector("[data-carousel-prev]");
+        const next = carousel.querySelector("[data-carousel-next]");
+        const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        let autoplay;
+
+        const setActive = (index) => {
+          dots.forEach((dot, dotIndex) => {
+            dot.setAttribute("aria-current", String(dotIndex === index));
+          });
+        };
+
+        const scrollToSlide = (index) => {
+          const slide = slides[index];
+
+          if (!slide) {
+            return;
+          }
+
+          track.scrollTo({
+            left: slide.offsetLeft - track.offsetLeft,
+            behavior: "smooth",
+          });
+        };
+
+        const currentIndex = () => {
+          const slideWidth = slides[0]?.getBoundingClientRect().width || 1;
+          return Math.round(track.scrollLeft / slideWidth);
+        };
+
+        previous.addEventListener("click", () => {
+          scrollToSlide(Math.max(currentIndex() - 1, 0));
+        });
+
+        next.addEventListener("click", () => {
+          scrollToSlide(Math.min(currentIndex() + 1, slides.length - 1));
+        });
+
+        dots.forEach((dot, index) => {
+          dot.addEventListener("click", () => scrollToSlide(index));
+        });
+
+        track.addEventListener("scroll", () => {
+          window.requestAnimationFrame(() => {
+            setActive(Math.min(Math.max(currentIndex(), 0), slides.length - 1));
+          });
+        });
+
+        const startAutoplay = () => {
+          if (reducedMotion || autoplay) {
+            return;
+          }
+
+          autoplay = window.setInterval(() => {
+            const nextIndex = (currentIndex() + 1) % slides.length;
+            scrollToSlide(nextIndex);
+          }, 5500);
+        };
+
+        const stopAutoplay = () => {
+          window.clearInterval(autoplay);
+          autoplay = undefined;
+        };
+
+        carousel.addEventListener("mouseenter", stopAutoplay);
+        carousel.addEventListener("mouseleave", startAutoplay);
+        carousel.addEventListener("focusin", stopAutoplay);
+        carousel.addEventListener("focusout", startAutoplay);
+
+        startAutoplay();
+      }
+
+      const revealTargets = document.querySelectorAll(
+        "main > section:not(.hero):not(.calendar), .calendar-heading"
+      );
+
+      if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches && "IntersectionObserver" in window) {
+        revealTargets.forEach((target) => target.classList.add("reveal"));
+
+        const revealVisible = () => {
+          revealTargets.forEach((target) => {
+            if (target.classList.contains("is-visible")) {
+              return;
+            }
+
+            const bounds = target.getBoundingClientRect();
+
+            if (bounds.top < window.innerHeight * 0.88) {
+              target.classList.add("is-visible");
+            }
+          });
+        };
+
+        window.addEventListener("scroll", revealVisible, { passive: true });
+        window.addEventListener("resize", revealVisible);
+        window.setTimeout(revealVisible, 80);
+      }
+    </script>
+  </body>
+</html>
