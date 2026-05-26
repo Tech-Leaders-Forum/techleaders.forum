@@ -252,6 +252,10 @@ h1 {
   font-weight: 700;
 }
 
+.hero-copy br {
+  display: block;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -530,8 +534,24 @@ h1 {
   box-shadow: 0 0 0 8px rgba(214, 255, 63, 0.08);
 }
 
+.host-link {
+  width: min(220px, 70%);
+  max-width: 100%;
+  display: block;
+  margin: 0 auto auto;
+  border-radius: 999px;
+}
+
+.host-link .host-photo {
+  width: 100%;
+}
+
 .host-card-row article:nth-child(2) .host-photo {
   object-position: center 18%;
+}
+
+.host-grid h3 a:hover {
+  color: var(--lime);
 }
 
 .host-grid h3 {
@@ -576,10 +596,21 @@ h1 {
 .host-grid .logistics-card img {
   width: min(240px, 48%);
   height: auto;
+  display: block;
   align-self: center;
   margin-inline: auto;
   margin-top: 0;
   filter: brightness(0) invert(1);
+}
+
+.host-grid .logistics-card a {
+  width: min(240px, 48%);
+  align-self: center;
+  margin-inline: auto;
+}
+
+.host-grid .logistics-card a img {
+  width: 100%;
 }
 
 .next-session {
@@ -619,6 +650,10 @@ h1 {
   margin-bottom: 22px;
   color: var(--soft-white);
   font-weight: 900;
+}
+
+.session-meta a {
+  display: inline-flex;
 }
 
 .session-meta img {
@@ -804,6 +839,8 @@ h1 {
 
 .carousel {
   position: relative;
+  width: min(60vw, 960px);
+  margin-inline: auto;
   overflow: hidden;
   border: 1px solid var(--box-border);
   border-radius: 8px;
@@ -1224,10 +1261,19 @@ h1 {
 
 .previous-timeline .session-item article {
   min-height: 136px;
+  border-color: rgba(255, 255, 255, 0.14);
+  background: rgba(3, 8, 7, 0.28);
+  opacity: 0.68;
 }
 
 .previous-timeline h3 {
   margin-bottom: 0;
+}
+
+.previous-timeline .session-badge,
+.previous-timeline strong,
+.previous-timeline h3 {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .register {
@@ -1366,6 +1412,10 @@ h1 {
     width: min(210px, 100%);
   }
 
+  .host-grid .logistics-card a {
+    width: min(210px, 100%);
+  }
+
   .intro,
   .cards,
   .format,
@@ -1388,6 +1438,10 @@ h1 {
     position: static;
     justify-content: center;
     margin: 12px;
+  }
+
+  .carousel {
+    width: 100%;
   }
 
   .carousel-slide img {
