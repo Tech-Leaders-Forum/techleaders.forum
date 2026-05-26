@@ -54,7 +54,7 @@ Notes:
 
 - [ ] **Step 2: Verify in browser**
 
-Run: `open -a "Google Chrome" ./assets/favicon.svg`
+Run: `open -a "Google Chrome" /Users/eszpee/projects/tlf/techleaders.forum/assets/favicon.svg`
 
 Expected: lime "TLF" on black rounded square fills the viewport. All three letters visible and distinct.
 

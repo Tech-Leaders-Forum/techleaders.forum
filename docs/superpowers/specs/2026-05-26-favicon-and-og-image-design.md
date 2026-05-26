@@ -73,7 +73,7 @@ Stack vertically with `~22px` gap at preview scale (`44px` at full size). All th
 
 - Linear gradient `#030807` → `#07100e` (vertical)
 - Radial glow lime/green-tinted: top-left (`#083f22` 0% → transparent 55%) and bottom-right (`#128b37` 0% → transparent 55%)
-- Faint grid overlay (`rgba(255,255,255,0.025)` 1px lines every 24px, both axes)
+- Faint grid overlay (`rgba(255,255,255,0.025)` 1px lines every 48px, both axes)
 
 This is the same background system used by the live site, scaled to one frame.
 

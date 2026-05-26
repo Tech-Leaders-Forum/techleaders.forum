@@ -30,8 +30,24 @@ profile="$(mktemp -d)"
 og_out="$ROOT/assets/og-image.png"
 rm -f "$og_out"
 
-# Chrome headless writes the screenshot then sometimes hangs on shutdown.
-# Run it in the background, wait for the output file to appear, then kill it.
+cleanup() {
+  if [[ -n "${chrome_pid:-}" ]]; then
+    kill -TERM "$chrome_pid" 2>/dev/null || true
+    for _ in $(seq 1 10); do
+      kill -0 "$chrome_pid" 2>/dev/null || break
+      sleep 0.2
+    done
+    kill -KILL "$chrome_pid" 2>/dev/null || true
+    wait "$chrome_pid" 2>/dev/null || true
+  fi
+  rm -rf "$profile"
+}
+trap cleanup EXIT
+
+# --virtual-time-budget waits for the page (incl. web fonts) to settle before
+# capturing, so the screenshot is deterministic regardless of network speed.
+# Chrome occasionally hangs on shutdown after writing the screenshot, so we
+# background it and let the EXIT trap terminate it.
 "$CHROME" \
   --headless=new \
   --disable-gpu \
@@ -41,6 +57,7 @@ rm -f "$og_out"
   --no-default-browser-check \
   --window-size=1200,630 \
   --default-background-color=00000000 \
+  --virtual-time-budget=10000 \
   --user-data-dir="$profile" \
   --screenshot="$og_out" \
   "file://$ROOT/assets/og-image.html" >/dev/null 2>&1 &
@@ -54,10 +71,6 @@ for _ in $(seq 1 60); do
   fi
   sleep 0.5
 done
-
-kill -9 "$chrome_pid" 2>/dev/null || true
-wait "$chrome_pid" 2>/dev/null || true
-rm -rf "$profile"
 
 if [[ ! -s "$og_out" ]]; then
   echo "OG image render failed — Chrome never wrote $og_out" >&2
