@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>OG Image</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Space+Grotesk:wght@600;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { width: 1200px; height: 630px; overflow: hidden; }
+    body {
+      font-family: 'Inter', -apple-system, system-ui, sans-serif;
+      color: #fff;
+      background:
+        radial-gradient(120% 90% at 20% 10%, #083f22 0%, transparent 55%),
+        radial-gradient(80% 70% at 90% 90%, #128b37 0%, transparent 55%),
+        linear-gradient(180deg, #030807 0%, #07100e 100%);
+      position: relative;
+    }
+    body::after {
+      content: '';
+      position: absolute; inset: 0; pointer-events: none;
+      background-image:
+        repeating-linear-gradient(0deg, rgba(255,255,255,.025) 0 1px, transparent 1px 48px),
+        repeating-linear-gradient(90deg, rgba(255,255,255,.025) 0 1px, transparent 1px 48px);
+    }
+    .inner {
+      position: absolute; inset: 88px 120px;
+      display: flex; flex-direction: column; justify-content: center;
+      gap: 44px;
+      z-index: 1;
+    }
+    .label {
+      font-size: 22px; font-weight: 700;
+      letter-spacing: 0.22em; text-transform: uppercase;
+      color: #d6ff3f;
+    }
+    .wordmark {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 112px;
+      line-height: 0.92;
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+      color: #fff;
+    }
+    .wordmark .play { color: #d6ff3f; }
+    .tagline {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 600;
+      font-size: 44px;
+      line-height: 1.2;
+      color: rgba(255,255,255,0.85);
+      max-width: 920px;
+    }
+  </style>
+</head>
+<body>
+  <div class="inner">
+    <div class="label">English-language meetup · Budapest, Hungary</div>
+    <div class="wordmark">Tech<br>Leaders'Forum<span class="play">&#9654;</span></div>
+    <div class="tagline">Conversations on leadership challenges.</div>
+  </div>
+</body>
+</html>

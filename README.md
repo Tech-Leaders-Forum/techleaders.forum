@@ -193,3 +193,24 @@ Timeline rules:
 - Avoid nested cards.
 - Avoid hard horizontal lines between sections.
 - Keep mobile layouts single-column and readable.
+
+## Brand assets
+
+The favicon and Open Graph share image are generated from source files:
+
+- `assets/favicon.svg` — TLF monogram (vector source)
+- `assets/og-image.html` — 1200×630 HTML template for the social share card
+
+To regenerate the PNG variants after editing either source, run:
+
+```bash
+./scripts/render-assets.sh
+```
+
+Requires `rsvg-convert` (`brew install librsvg`) and Google Chrome installed at the default macOS path. The script writes:
+
+- `assets/favicon-32.png`
+- `assets/favicon-180.png`
+- `assets/og-image.png`
+
+Commit the regenerated PNGs alongside the source change.
