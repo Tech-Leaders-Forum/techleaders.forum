@@ -7,7 +7,9 @@ Open the project through a local preview server or load `index.html` directly in
 ## Files
 
 - `index.html`: page structure and event copy
+- `privacy.html`: GDPR Art. 13 privacy policy, linked from the site footer
 - `styles.css`: visual design inspired by the provided flyer
+- `assets/fonts/`: self-hosted Inter and Space Grotesk woff2 files (latin + latin-ext subsets)
 - `assets/tech-leaders-forum-logo.svg`: primary Tech Leaders' Forum logo
 - `assets/crafthub.svg`: logistics partner logo
 - `assets/kluster.svg`: venue logo for the next forum session
@@ -57,10 +59,10 @@ Sections should remain transparent unless there is a strong reason to isolate co
 
 ### Typography
 
-Fonts are loaded from Google Fonts:
+Fonts are self-hosted under `assets/fonts/` (woff2, latin + latin-ext subsets) to avoid the IP-transfer issue of loading from the Google Fonts CDN. `@font-face` declarations live at the top of `styles.css`.
 
-- `Inter`: default body/UI font
-- `Space Grotesk`: display headings
+- `Inter`: default body/UI font (weights 500, 700, 800, 900)
+- `Space Grotesk`: display headings (weights 600, 700)
 
 Type rules:
 
