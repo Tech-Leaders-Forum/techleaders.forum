@@ -1586,16 +1586,27 @@ h1 {
   }
 
   .host-grid .logistics-card {
+    min-height: auto;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    padding: 28px 22px 34px;
+    text-align: center;
+  }
+
+  .host-grid .logistics-card span {
+    position: static;
+    align-self: flex-start;
+    font-size: 0.88rem;
   }
 
   .host-grid .logistics-card img {
-    width: min(210px, 100%);
+    width: 100%;
   }
 
   .host-grid .logistics-card a {
-    width: min(210px, 100%);
+    width: min(178px, 72%);
   }
 
   .intro,
