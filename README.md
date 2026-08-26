@@ -1,4 +1,4 @@
-# Tech Leaders' Forum 
+# Tech Leaders' Forum
 
 A standalone static landing page concept for Tech Leaders' Forum.
 
