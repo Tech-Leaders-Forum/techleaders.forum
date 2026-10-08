@@ -4,6 +4,17 @@ A standalone static landing page concept for Tech Leaders' Forum.
 
 Open the project through a local preview server or load `index.html` directly in a browser. The page uses local assets from `assets/` and is styled in `styles.css`.
 
+## Contribution workflow
+
+There are two contributors, so every update starts by syncing with GitHub's `main`.
+
+1. Check `git status` before switching branches. Preserve any existing local changes, then run `git switch main` and `git pull --ff-only origin main`. If syncing fails or the branches have diverged, resolve the cause before starting the update; do not reset or overwrite local work.
+2. Make and review the changes. Before committing, create a new branch with `git switch -c codex/<update-name>` (or another descriptive contributor branch name). Stage only the files belonging to the update, commit them, and push with `git push -u origin <branch-name>`.
+3. Open a pull request targeting `main`, with a short description of the changes and any validation performed.
+4. The project owner reviews the PR and manually selects **Squash and merge** in GitHub. Coding agents stop after opening the PR and leave merging to the owner.
+
+After the manual merge, sync local `main` again before starting the next update.
+
 ## Files
 
 - `index.html`: page structure and event copy
