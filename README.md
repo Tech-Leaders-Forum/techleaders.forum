@@ -170,7 +170,7 @@ People photos:
 
 - Host photos use large circular crops, centered in their cells.
 - Previous panelist photos use the same circular treatment at a smaller scale.
-- Use `object-position` per image when needed so heads are not cropped.
+- Use `object-position` per image when needed so heads are not cropped. Target the image by filename (`.panelist-photo img[src*="panelist-name"]`), not by grid position, so adding panelists doesn't shift the crops.
 - If a panelist photo is unavailable, keep a quiet placeholder circle rather than changing the grid structure.
 
 Gallery:
@@ -186,8 +186,10 @@ The sessions area uses a centered vertical timeline on desktop and a left-rail t
 
 Current content groups:
 
-- Upcoming: October 2026 Compass AI & Tech Summit collaboration, August 2026 forum session, June 2026 Craft Conference collaboration
-- Previous sessions: April 2026 Managing Remote Teams, February 2026 AI use for Engineering Managers
+- Upcoming: next forum session placeholder (date, topic and panel to be announced)
+- Previous sessions: November 2026 Formal Performance Feedback, October 2026 Compass AI & Tech Summit collaboration, August 2026 feedback session, June 2026 Craft Conference collaboration, April 2026 Managing Remote Teams, February 2026 AI use for Engineering Managers
+
+When the next session isn't scheduled yet, the "Next Forum Session" block and the Upcoming timeline card show a "details coming soon" placeholder, and the primary CTA becomes "Subscribe for updates" pointing to the CraftHub Luma calendar (`https://luma.com/crafthub`).
 
 Timeline rules:
 
