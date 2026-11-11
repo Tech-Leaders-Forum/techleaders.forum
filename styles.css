@@ -1236,19 +1236,19 @@ h1 {
   object-position: center 26%;
 }
 
-.panelist-grid article:nth-child(2) .panelist-photo img {
+.panelist-photo img[src*="panelist-balazs-bozsogi"] {
   object-position: center 33%;
 }
 
-.panelist-grid article:nth-child(4) .panelist-photo img {
+.panelist-photo img[src*="panelist-mate-marjai"] {
   object-position: center 22%;
 }
 
-.panelist-grid article:nth-child(5) .panelist-photo img {
+.panelist-photo img[src*="panelist-tamas-michelberger"] {
   object-position: center 20%;
 }
 
-.panelist-grid article:nth-child(6) .panelist-photo img {
+.panelist-photo img[src*="panelist-tamas-tajti"] {
   object-position: center 24%;
 }
 
